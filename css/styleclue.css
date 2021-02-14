@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #3771c8ff;
+    /* justify-content: center;
+    align-items: center; */
+    overflow-x: hidden;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: emulogic;
+    src: url('emulogic.ttf');
+}
+
+.head {
+    display: flex;
+    background: #ffffff;
+    height: 50px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.backToMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.goToGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.backToMenu input,
+.goToQuiz input,
+.goToGame input {
+    padding: 10px;
+    font-size: 15px;
+    background: #3771c8ff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.titleHead {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    height: 100px;
+    width: 300px;
+}
+
+.titleHead h1 {
+    font-family: 'Hammersmith One', sans-serif;
+    color: #3771c8ff;
+}
+
+.btn {
+    padding: 15px 45px;
+    background-color: #ffffff;
+    color: #3771c8ff;
+    font-family: 'Hammersmith One', sans-serif;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.customBody {
+    /* position: relative; */
+    max-width: 750px;
+    padding: 30px;
+    margin: 20px auto;
+    background: #ffff;
+    border-radius: 10px;
+    animation: fadeInRight 1s ease;
+}
+
+@keyframes fadeInRight {
+    0% {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.titleBody {
+    text-align: center;
+    border-bottom: 1px solid #3771c8ff;
+}
+
+.titleBody h1 {
+    color: #3771c8ff;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.banner img {
+    max-width: 750px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.curiosity {
+    display: block;
+    position: relative;
+    border-left: 3px solid #3771c8ff;
+    color: #3771c8ff;
+    padding: 0 20px;
+    font-weight: bold;
+    font-family: 'Hammersmith One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.entry h2 {
+    border-bottom: 1px solid #3771c8ff;
+    color: #3771c8ff;
+    font-family: 'Hammersmith One', sans-serif;
+    outline: 0;
+    font-weight: 400;
+}
+
+.entry p {
+    display: block;
+    position: relative;
+    font-family: 'Hammersmith One', sans-serif;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    margin: 25px 0;
+}
+
+.entry ul {
+    list-style: disc;
+    margin: 0 0 25px 35px;
+}
+
+.entry ul li {
+    list-style: disc;
+    margin: 0 0 6px;
+    font-family: 'Hammersmith One', sans-serif;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+}
+
+.btnBottom {
+    padding: 15px 45px;
+    background-color: #3771c8ff;
+    color: #ffffff;
+    font-family: 'Hammersmith One', sans-serif;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin: 10px;
+}

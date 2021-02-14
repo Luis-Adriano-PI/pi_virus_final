@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Virus Game</title>
+	<link rel="stylesheet" type="text/css" href="css/stylequiz.css" />
+</head>
+<body>
+	
+	<div class="bodyHome customBody">
+        <h3>Vírus Game - Quiz</h3>
+        <p>Número de questões: <span class="totalQuestoes"></span></p>
+        <button type="button" class="btn" onclick="startQuiz()">Dale</button>
+        <a href="index.html"> <input type="button" class="btn" value="Menu Principal"></a>
+    </div>
+
+    <div class="bodyQuiz customBody hide">
+        <div class="numQues"></div>
+
+        <div class="textQues"></div>
+
+        <div class="containerQues"></div>
+
+        <div class="nextQues">
+            <button type="button" class="btn" onclick="next()">Próxima</button>
+        </div>
+        <div class="floor">
+            <div class="answersVerific"></div>
+            <a href="quiz.html"> <input type="button" class="btn" value="Reiniciar"></a>
+        </div>
+    </div>
+
+    <div class="result customBody hide">
+        <h1>Resultado</h1>
+        <table>
+            <tr>
+                <td>Total de Questões</td>
+                <td><span class="totalQues"></span></td>
+            </tr>
+            <tr>
+                <td>Tentativas</td>
+                <td><span class="totalAttempt"></span></td>
+            </tr>
+            <tr>
+                <td>Acerto miseravi</td>
+                <td><span class="totalCorrect"></span></td>
+            </tr>
+            <tr>
+                <td>Errrrrou</td>
+                <td><span class="totalWrong"></span></td>
+            </tr>
+            <tr>
+                <td>Porcentagem</td>
+                <td><span class="percentage"></span></td>
+            </tr>
+            <tr>
+                <td>Pontos</td>
+                <td><span class="totalScore"></span></td>
+            </tr>
+        </table>
+
+        <button type="button" class="btn" onclick="tryAgain()">Jogar denovo</button>
+        <button type="button" class="btn" onclick="backToMenu()">Menu</button>
+    </div>
+
+    <script src="js/question.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

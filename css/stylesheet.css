@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #3771c8ff;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: emulogic;
+    src: url('emulogic.ttf');
+}
+
+.bodyHead {
+    display: flex;
+    background: #ffffff;
+    height: 50px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.backToMenu,
+.goToQuiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    height: 35px;
+    width: 120px;
+}
+
+.backToMenu input,
+.goToQuiz input {
+    padding: 10px;
+    font-size: 15px;
+    background: #3771c8ff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.title {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    height: 100px;
+    width: 300px;
+}
+
+h1 {
+    font-family: 'Hammersmith One', sans-serif;
+    color: #3771c8ff;
+}
+
+.btn {
+    padding: 15px 45px;
+    background-color: #ffffff;
+    color: #3771c8ff;
+    font-family: 'Hammersmith One', sans-serif;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.giveHint {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.giveHint::before,
+.giveHint::after {
+    content: '';
+    clear: both;
+    display: table; 
+}
+
+.giveHint.hide {
+    display: none;
+}
+
+
+canvas {
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 20px;
+}
